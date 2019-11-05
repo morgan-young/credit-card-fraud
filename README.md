@@ -1,5 +1,13 @@
 ## Detecting Fraudulent Credit Card Transactions Using Deep Learning
 
+![Credit Card](https://cdn.hswstatic.com/gif/revolving-credit-1.jpg)
+
+### Data Summary
+
+This data contains real card transactions from European cardholders over a two day period. There are over 250,000 transactions and the fraudulent transactions make up 0.172% of the total transactions. This may seem small, but is usual for this industry and nevertheless is still an issue that needs to be tackled.
+
+Because the data is real and obtained (open source) from a third party, it has all been completely anonymised and normalised using PCA transformation, meaning the column names and the individual records won't make sense to us looking at it. There are only two columns that have been left as they were originally, 'Time' and 'Amount'. 'Time' is the number of seconds that transaction took place after the first in the dataset and 'Amount' is the amount of the transaction. The 'Class' identifier (1 or 0) indicates whether the transaction was indeed fraudulent or not.
+
 ### Problem Statement
 
 Large financial institutions and brand new FinTech startups are all facing the same issues when it comes to KYC, regulatory compliance and fraud. The difference is that large institutions have well established means of detecting and dealing with fraud, but FinTech startups... not as much.
@@ -21,6 +29,4 @@ The problem with rules based systems is they are only as good as the rules that 
 
 An intelligent, non-rules based system that uses real card transactions, both fraudulent and non-fraudulent, to learn what aspects of a transaction make it likely to be fraud based on hundreds of thousands or millions of records, and flag potentially fraudulent transactions on that basis.
 
-Deep learning is one way of achieving this. There are other classification models in the 'tool kit' that I may experiment with to see if I achieve a higher rate of accuracy but a deep neural network was the model I chose for this classification task because of the complexity of the data available and the need for a lot of cross referencing. Other models I'm considering include an SVM and KNN models.
-
-The data used is anonymised and pre-normalised card transaction data and includes over 250,000 records.
+Deep learning is one way of achieving this that produced a very accurate result in this case study.
