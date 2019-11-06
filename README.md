@@ -29,4 +29,4 @@ The problem with rules based systems is they are only as good as the rules that 
 
 An intelligent, non-rules based system that uses real card transactions, both fraudulent and non-fraudulent, to learn what aspects of a transaction make it likely to be fraud based on hundreds of thousands or millions of records, and flag potentially fraudulent transactions on that basis.
 
-Deep learning is one way of achieving this that produced a very accurate result (99.4% accurate) in this case study.
+Deep learning is one way of achieving this that produced a very accurate result in this case study.
